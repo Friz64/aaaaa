@@ -20,7 +20,7 @@ class AaaaaInputMethodService : InputMethodService(), AaaaaKeyboardView.AaaaaKey
 
     private fun newLongPressThread() = thread {
         while (!Thread.currentThread().isInterrupted) {
-            inputChar('a')
+            inputChar('h')
             try {
                 Thread.sleep(100L)
             } catch (e: InterruptedException) {
@@ -61,7 +61,7 @@ class AaaaaInputMethodService : InputMethodService(), AaaaaKeyboardView.AaaaaKey
     }
 
     override fun onA() {
-        inputChar('a')
+        inputChar('h')
     }
 
     override fun onLongA() {
